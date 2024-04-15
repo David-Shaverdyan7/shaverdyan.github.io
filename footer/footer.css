@@ -1,0 +1,19 @@
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 320px;
+}
+footer > p {
+  color: white;
+}
+footer > p > a {
+  text-decoration: none;
+  color: white;
+}
+footer > p::first-letter {
+  color: black;
+}/*# sourceMappingURL=footer.css.map */

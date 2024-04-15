@@ -1,0 +1,35 @@
+.pictures{
+   width: 100%;
+   height: auto;
+    border: solid;
+    background-color: red;
+    position: relative;
+    min-width: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    >p{
+        position: absolute;
+        bottom: 10%;
+        right: 5%;
+        width: 60px;
+        height: 60px;
+        background-color: black;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        >a{
+            color: gray;
+            text-decoration: none;
+
+        }
+
+    }
+    >img{
+        width:200px;
+        height: 250px;
+        margin: 10px;
+    }
+}

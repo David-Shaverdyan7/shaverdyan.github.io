@@ -1,0 +1,121 @@
+#contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+    
+    >form{
+        width: 35%;
+        height: auto;
+        box-shadow: 0 0 5px blue;
+        transform: scale(1.05);
+
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        padding: 10px;
+        min-width: 300px;
+       
+       
+       input{
+        width: 90%;
+        padding: 12px;
+        margin: 5px;
+        transition: 1s all ease-out;
+        &:hover{
+            transform: scale(1.05);
+        }
+       }
+       >p{
+       
+        width: 90%;
+        padding: 0 5px;
+       }
+    #message{
+        height: 200px;
+        margin-bottom: 5px;
+    }
+    button{
+        background-color: rgba(0, 0, 0, 0.013);
+       
+        padding: 5px 10px;
+        cursor: pointer;
+        &:hover{
+            background-color: gray;
+            color: white;
+            box-shadow: 0 0 30px gray;
+        }
+    }
+    
+    }
+
+    >.contact-info{
+        width: 50%;
+        height: 96vh;
+        min-width: 289px;
+
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        align-self: flex-end;
+
+        .social{
+           
+    
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: column;
+            padding: 10px;
+            .contact{
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                flex-direction: column;
+
+            }
+            .socinfo{
+               display: flex;
+               align-items: flex-start;
+               justify-content: space-between;
+               width: 100%;
+                a{
+                    padding: 5px;
+                    text-decoration: none;
+                    color: rgb(52, 90, 231);
+                    font-weight: 600;
+                    img{
+                        width: 28px;
+                        height: 28px;
+                
+                    }
+                }
+
+            }
+         
+        }
+    }
+}
+@media screen and (max-width:767px){
+   #contact{
+    padding: 20px;
+    form{
+        margin-bottom: 20px;
+        flex-grow: 1;
+    }
+    .contact-info{
+        min-width: 299px;
+        height: auto;
+        flex-grow: 1;
+        justify-content: center;
+       
+        .social{
+            padding: 0;
+           
+        }
+
+    }
+   }
+}

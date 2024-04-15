@@ -1,0 +1,305 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 20vh;
+  background-color: rgb(18, 236, 251);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+header .logo {
+  width: 160px;
+  height: 100%;
+}
+header .logo img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 991px) {
+  header {
+    height: 31vh;
+    min-height: 245px;
+    min-width: 320px;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/005/076/592/non_2x/hacker-mascot-for-sports-and-esports-logo-free-vector.jpg);
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    align-items: flex-start;
+  }
+  header .logo {
+    display: none;
+  }
+  nav {
+    width: 100%;
+  }
+}
+#home {
+  animation: home 10s infinite alternate ease-in;
+  min-height: 350px;
+}
+
+@keyframes home {
+  0% {
+    background-image: url(./../image/slide1.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  25% {
+    background-image: url(./../image/slide2.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  50% {
+    background-image: url(./../image/slide3.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  75% {
+    background-image: url(./../image/slide4.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  100% {
+    background-image: url(./../image/slide5.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#about > .about-blocks {
+  width: 50%;
+  height: 70%;
+  min-width: 300px;
+  padding: 20px;
+}
+#about > .about-blocks > video {
+  width: 100%;
+  height: 100%;
+}
+#about > .about-blocks > video source {
+  width: 100%;
+  height: 100%;
+}
+#about h1 {
+  width: 100%;
+}
+#about .text {
+  overflow: auto;
+  padding: 20px;
+}
+#about .text > p {
+  text-align: justify;
+}
+
+@media screen and (max-width: 767px) {
+  #about {
+    width: 100%;
+    height: auto;
+    padding: 50px;
+  }
+  #about > .about-blocks {
+    width: 100%;
+    height: 400px;
+  }
+}
+#contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100%;
+}
+#contact > form {
+  width: 35%;
+  height: auto;
+  box-shadow: 0 0 5px blue;
+  transform: scale(1.05);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 10px;
+  min-width: 300px;
+}
+#contact > form input {
+  width: 90%;
+  padding: 12px;
+  margin: 5px;
+  transition: 1s all ease-out;
+}
+#contact > form input:hover {
+  transform: scale(1.05);
+}
+#contact > form > p {
+  width: 90%;
+  padding: 0 5px;
+}
+#contact > form #message {
+  height: 200px;
+  margin-bottom: 5px;
+}
+#contact > form button {
+  background-color: rgba(0, 0, 0, 0.013);
+  padding: 5px 10px;
+  cursor: pointer;
+}
+#contact > form button:hover {
+  background-color: gray;
+  color: white;
+  box-shadow: 0 0 30px gray;
+}
+#contact > .contact-info {
+  width: 50%;
+  height: 96vh;
+  min-width: 289px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  align-self: flex-end;
+}
+#contact > .contact-info .social {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 10px;
+}
+#contact > .contact-info .social .contact {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+#contact > .contact-info .social .socinfo {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+#contact > .contact-info .social .socinfo a {
+  padding: 5px;
+  text-decoration: none;
+  color: rgb(52, 90, 231);
+  font-weight: 600;
+}
+#contact > .contact-info .social .socinfo a img {
+  width: 28px;
+  height: 28px;
+}
+
+@media screen and (max-width: 767px) {
+  #contact {
+    padding: 20px;
+  }
+  #contact form {
+    margin-bottom: 20px;
+    flex-grow: 1;
+  }
+  #contact .contact-info {
+    min-width: 299px;
+    height: auto;
+    flex-grow: 1;
+    justify-content: center;
+  }
+  #contact .contact-info .social {
+    padding: 0;
+  }
+}
+main {
+  width: 100%;
+  height: auto;
+  border: solid;
+  padding-top: 20vh;
+}
+main .container {
+  width: 100%;
+  height: 100vh;
+  background-color: aquamarine;
+  margin-top: 1px;
+}
+
+@media screen and (max-width: 991px) {
+  main {
+    padding-top: 270px;
+    min-width: 320px;
+  }
+}
+.pictures {
+  width: 100%;
+  height: auto;
+  border: solid;
+  background-color: red;
+  position: relative;
+  min-width: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.pictures > p {
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
+  width: 60px;
+  height: 60px;
+  background-color: black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pictures > p > a {
+  color: gray;
+  text-decoration: none;
+}
+.pictures > img {
+  width: 200px;
+  height: 250px;
+  margin: 10px;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 320px;
+}
+footer > p {
+  color: white;
+}
+footer > p > a {
+  text-decoration: none;
+  color: white;
+}
+footer > p::first-letter {
+  color: black;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-color: aquamarine rgba(0, 0, 0, 0);
+  scrollbar-width: thin;
+}/*# sourceMappingURL=style.css.map */
